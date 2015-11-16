@@ -1,8 +1,18 @@
+import java.util.Scanner;
 
 public class Task4 {
 	public static void main(String[] args) {
+		Scanner key = new Scanner(System.in);
+		System.out.println("Enter array length:");
+		int n = key.nextInt();
 
-		int[] arr = { 1, 2, 3, 4, 5, 4, 3, 2, 1 };
+		int[] arr = new int[n];
+
+		System.out.println("Enter array elements: ");
+		for (int index = 0; index < arr.length; index++) {
+			arr[index] = key.nextInt();
+		}
+
 		int last = arr.length;
 		boolean isMirrored = false;
 
@@ -17,7 +27,7 @@ public class Task4 {
 			}
 
 		}
-		if (isMirrored == true) {
+		if (isMirrored == true || n == 1) {
 
 			System.out.println("The array is mirrored! ");
 

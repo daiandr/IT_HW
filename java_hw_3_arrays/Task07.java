@@ -1,8 +1,17 @@
+import java.util.Scanner;
 
 public class Task7 {
 	public static void main(String[] args) {
 
-		int[] arr = { 21, 3, 4, 24, 45, 32, 71, 12 };
+		Scanner key = new Scanner(System.in);
+		
+		System.out.println("Enter array length:");
+		int n = key.nextInt();
+		int[] arr = new int[n];
+		System.out.println("Enter array elements: ");
+		for (int index = 0; index < arr.length; index++) {
+			arr[index] = key.nextInt();
+		}
 
 		int[] newArr = new int[arr.length];
 
