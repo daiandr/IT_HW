@@ -34,8 +34,12 @@ public class StudentGroup {
     void theBestStudent() {
         int max = 0;
         for (int i = 0; i < this.students.length - 1; i++) {
-            if (this.students[i].grade > this.students[i + 1].grade) {
-                max = i;
+            if (this.students[i] != null && this.students[i + 1] != null) {
+                if (this.students[i].grade > this.students[i + 1].grade && this.students[i] != null) {
+                    max = i;
+                }
+            }else{
+                continue;
             }
         }
 
