@@ -20,10 +20,10 @@ public class Student {
     Student(String name, String subject, int age) {
         this();
 
-        if (name != null && name != "") {
+        if (name != null && !(name.equals(""))) {
             this.name = name;
         }
-        if (subject != null && subject != "") {
+        if (subject != null && !(subject.equals(""))) {
             this.subject = subject;
         }
         if (age > 0) {

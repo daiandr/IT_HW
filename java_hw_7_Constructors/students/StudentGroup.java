@@ -13,7 +13,9 @@ public class StudentGroup {
 
     StudentGroup(String subject) {
         this();
-        this.groupSubject = subject;
+        if(subject != null && !(subject.equals(""))) {
+            this.groupSubject = subject;
+        }
     }
 
     void addStudennt(Student student) {
@@ -39,6 +41,8 @@ public class StudentGroup {
 
         System.out.println(this.students[max].name);
     }
+
+
 
     void printStudentsInGroup() {
         for (int i = 0; i < this.students.length; i++) {
