@@ -13,6 +13,8 @@ public class Shop {
 
     public void sellInstrument(MusicalInstrument instrument){
 
+        //iterator koito proverqva dali instrument se sudurja v Map-a instrumentsForSale
+
     }
 
 }
